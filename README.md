@@ -18,3 +18,7 @@ Playing around with CLI concepts for a tool
 ```
 ./gradlew run
 ```
+
+## Sources
+* https://github.com/Itiviti/simple-slack-api
+* https://github.com/Itiviti/simple-slack-api/blob/master/samples/events/src/main/java/events/ListeningToMessageEvents.java

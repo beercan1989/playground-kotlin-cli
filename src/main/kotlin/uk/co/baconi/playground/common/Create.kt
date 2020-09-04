@@ -1,7 +1,6 @@
-package uk.co.baconi.playground.cli
+package uk.co.baconi.playground.common
 
 import com.github.ajalt.clikt.core.CliktCommand
-import com.github.ajalt.clikt.core.subcommands
 import com.github.ajalt.clikt.parameters.options.default
 import com.github.ajalt.clikt.parameters.options.option
 import com.github.ajalt.clikt.parameters.options.validate
@@ -9,11 +8,7 @@ import com.github.ajalt.clikt.parameters.types.int
 import com.github.ajalt.clikt.parameters.types.restrictTo
 import kotlin.random.Random
 
-class Application : CliktCommand(printHelpOnEmptyArgs = true) {
-    override fun run() {}
-}
-
-class Create : CliktCommand() {
+class Create : CliktCommand(printHelpOnEmptyArgs = true) {
 
     companion object {
         private val charPool: List<Char> by lazy { ('a'..'z') + ('A'..'Z') + ('0'..'9') }
@@ -49,19 +44,4 @@ class Create : CliktCommand() {
         echo("Pin: $pin")
         echo("Prefix: $prefix")
     }
-}
-
-class Update : CliktCommand() {
-    override fun run() {
-        echo("I would update something")
-    }
-}
-
-fun main(args: Array<String>) {
-    Application()
-        .subcommands(
-          Create(),
-          Update()
-        )
-        .main(args)
 }

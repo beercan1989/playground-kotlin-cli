@@ -9,6 +9,7 @@ plugins {
 
 repositories {
     mavenCentral()
+    maven("https://jitpack.io")
 }
 
 dependencies {
@@ -17,6 +18,9 @@ dependencies {
 
     // CLIKT - Command line helper
     implementation("com.github.ajalt.clikt:clikt:3.0.0-rc")
+
+    // Slack
+    implementation("com.github.Ullink:simple-slack-api:1.2.0")
 
     // Test framework
     testImplementation("io.kotest:kotest-runner-junit5:4.2.2")
