@@ -6,9 +6,7 @@
         </encoder>
     </appender>
 
-    <logger name="Application" level="INFO" />
-    <logger name="org.eclipse.jetty" level="INFO"/>
-    <logger name="io.netty" level="INFO"/>
+    <logger name="uk.co.baconi.playground.slack" level="DEBUG" />
 
     <root level="DEBUG">
         <appender-ref ref="STDOUT"/>
