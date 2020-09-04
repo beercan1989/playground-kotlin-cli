@@ -28,7 +28,7 @@ class BotServer {
             val message = event.messageContent.replace("<@${session.sessionPersona().id}>", "").trim()
 
             // Process as "normal"
-            bot.process(message.split(' ').filter(String::isBlank))
+            bot.process(message.split(' '))
         }
 
         while (true) {

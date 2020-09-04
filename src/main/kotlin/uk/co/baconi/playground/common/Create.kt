@@ -8,7 +8,7 @@ import com.github.ajalt.clikt.parameters.types.int
 import com.github.ajalt.clikt.parameters.types.restrictTo
 import kotlin.random.Random
 
-class Create : CliktCommand(printHelpOnEmptyArgs = true) {
+class Create : CliktCommand() {
 
     companion object {
         private val charPool: List<Char> by lazy { ('a'..'z') + ('A'..'Z') + ('0'..'9') }

@@ -2,7 +2,7 @@ package uk.co.baconi.playground.common
 
 import com.github.ajalt.clikt.core.CliktCommand
 
-class Update : CliktCommand(printHelpOnEmptyArgs = true) {
+class Update : CliktCommand() {
     override fun run() {
         echo("I would update something")
     }

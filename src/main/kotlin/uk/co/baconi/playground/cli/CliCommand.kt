@@ -23,7 +23,9 @@ class CliCommand : CliktCommand(name = "tum", printHelpOnEmptyArgs = true) {
         )
     }
 
-    override fun run() {}
+    override fun run() {
+        // Nothing to do at this level, look at the sub commands
+    }
 }
 
 
