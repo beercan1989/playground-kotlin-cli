@@ -31,7 +31,7 @@ dependencies {
 }
 
 application {
-    mainClassName = "uk.co.baconi.playground.cli.ApplicationKt"
+    mainClassName = "uk.co.baconi.playground.cli.CliCommandKt"
 }
 
 tasks.withType<KotlinCompile> {
